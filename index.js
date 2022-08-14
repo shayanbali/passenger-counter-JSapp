@@ -11,6 +11,7 @@ function increament() {
 }
 
 function save() {
+    resetStatus = document.getElementById("switch-reset").checked;
     if (flagFirstSave == false){
         savedCount += count + " "
         flagFirstSave = true
@@ -31,11 +32,6 @@ function reset() {
     document.getElementById("count-el").innerText = count
 }
 
-
-function autoReset() {
-    resetStatus = document.getElementById("switch-reset").checked;
-    console.log(resetStatus)
-}
 
 let welcomeEl = document.getElementById("welcome-el")
 let myName = "Shayan Bali"
