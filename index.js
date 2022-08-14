@@ -2,7 +2,7 @@ let count = 0
 let savedCount = "Previous entires: "
 let flagFirstSave = false
 let saveEL = document.getElementById("save-el")
-let autoSave = null
+let resetStatus = null
 
 function increament() {
     console.log(count)
@@ -18,7 +18,11 @@ function save() {
         savedCount += " - " + count 
     }
     saveEL.textContent = savedCount
+    if (resetStatus == true ) {
+        count = 0
+        document.getElementById("count-el").innerText = count
 
+    }
     console.log(savedCount)
 }
 
@@ -28,8 +32,9 @@ function reset() {
 }
 
 
-function autoSave() {
-    autoSave = document.getElementById("switchValue").checked;
+function autoReset() {
+    resetStatus = document.getElementById("switch-reset").checked;
+    console.log(resetStatus)
 }
 
 let welcomeEl = document.getElementById("welcome-el")
