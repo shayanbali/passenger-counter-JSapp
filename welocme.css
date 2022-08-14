@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;700:300&display=swap');
+
+body {
+    background-image: url("images/station.jpg");
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+button {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    background-color: green;
+    margin-bottom: 2px;
+    width: 20%;
+    height: 5em;
+    border-radius: 1em;
+    padding-top: 5.5px;
+    
+    
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
